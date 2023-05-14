@@ -711,9 +711,28 @@ header {
 
 }
 
+.swiper-pagination .swiper-pagination-bullet {
+    height: 16px;
+    width: 16px;
+    background-color: #2947A9;
+}
 
-.swiper-pagination-bullet {
-    height: 16px !important;
-    width: 16px !important;
-    background-color: #2947A9 !important;
-} 
+.swiper .swiper-button-next {
+    top: auto;
+    bottom: 0;
+    -webkit-user-select: none;
+}
+
+.swiper .swiper-button-prev {
+    top: auto;
+    bottom: 0;
+    -webkit-user-select: none;
+}
+
+.swiper .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: none;
+}
+
+.swiper .swiper-button-prev:after, .swiper-rtl .swiper-button-prev:after {
+    content: none;
+}
