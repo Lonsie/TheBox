@@ -668,8 +668,10 @@ header {
     }
 }
 
+
+// SWIPER
+
 .swiper {
-    // background: green;
     width: 100%;
     height: 100%;
     max-height: 766px;
@@ -685,11 +687,103 @@ header {
     height: auto !important;
     max-width: 384px;
 
-    & div {
+    & .wildstone {
         background-image: url(/img/projects/wildstone-infra-hotel.png);
         height: 247px;
-        object-fit: cover;
+        background-size: cover;
     }
+
+    & .wishstone {
+        background-image: url(/img/projects/wish-stone-building.png);
+        height: 247px;
+        background-size: cover;
+    }
+
+    & .parkinston {
+        background-image: url(/img/projects/parkingstons-house.png);
+        height: 247px;
+        background-size: cover;
+    }
+
+    & .oregano {
+        background-image: url(/img/projects/oregano-hotel.png);
+        height: 247px;
+        background-size: cover;
+    }
+
+    & .high-line {
+        background-image: url(/img/projects/high-line.png);
+        height: 247px;
+        background-size: cover;
+    }
+
+    & .museum {
+        background-image: url(/img/projects/museum.png);
+        height: 247px;
+        background-size: cover;
+    }
+
+    & .texas-ranch {
+        background-image: url(/img/projects/texas-ranch.png);
+        height: 247px;
+        background-size: cover;
+    }
+
+    & .bureau {
+        background-image: url(/img/projects/bureau.png);
+        height: 247px;
+        background-size: cover;
+    }
+
+    & .emporia-shopping-mall {
+        background-image: url(/img/projects/emporia-shopping-mall.png);
+        height: 247px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    & .rental-house {
+        background-image: url(/img/projects/rental-house.png);
+        height: 247px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    & .mansion {
+        background-image: url(/img/projects/mansion.png);
+        height: 247px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    & .insurgentes {
+        background-image: url(/img/projects/insurgentes.png);
+        height: 247px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    & .boneo {
+        background-image: url(/img/projects/boneo.png);
+        height: 247px;
+        width: 100%;
+        background-size:cover;        
+    }
+
+    & .country-house {
+        background-image: url(/img/projects/country-house.png);
+        height: 247px;
+        width: 100%;
+        background-size: cover;
+    }
+
+
+
+
+
+
+
+
 
     & h3 {
         margin: 0 0;
@@ -717,16 +811,30 @@ header {
     background-color: #2947A9;
 }
 
+.swiper-pagination .swiper-pagination-bullet-inactive {
+    opacity: .2;
+}
+
 .swiper .swiper-button-next {
     top: auto;
     bottom: 0;
     -webkit-user-select: none;
+    background-color: #292E3D;
+    max-width: 295px;
+    width: 100%;
+    height: 64px;
+    color: white;
 }
 
 .swiper .swiper-button-prev {
     top: auto;
     bottom: 0;
     -webkit-user-select: none;
+    background-color: #292E3D;
+    max-width: 295px;
+    width: 100%;
+    height: 64px;
+    color: white;
 }
 
 .swiper .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
@@ -736,3 +844,6 @@ header {
 .swiper .swiper-button-prev:after, .swiper-rtl .swiper-button-prev:after {
     content: none;
 }
+
+
+// projects-carousel-slide - обертка слайдов
