@@ -846,4 +846,15 @@ header {
 }
 
 
-// projects-carousel-slide - обертка слайдов
+.hidden-project {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+// .hidden-project {
+//     display: none !important;
+// }
