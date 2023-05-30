@@ -7,7 +7,7 @@ grid: {
 rows: 2,
 },
 
-spaceBetween: 32,
+spaceBetween: 7,
 
 pagination: {
 el: ".swiper-pagination",
@@ -18,6 +18,5 @@ navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
 
 });

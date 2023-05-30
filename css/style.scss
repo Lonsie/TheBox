@@ -648,14 +648,18 @@ header {
                 font-weight: 500;
                 font-size: 1.5rem;
                 color: #C2C7D6;
+                cursor: pointer;
+                -webkit-user-select: none;
             }
-    
-            & .projects-filter-all {
+            
+            .active-filter-button {
                 color: rgba(41, 71, 169, 1);
                 font-weight: 700;
+                transition: 0.5s;
+                pointer-events: none;
             }
 
-            & .projects-filter-all::before {
+            .active-filter-button::before {
                 content: "";
                 position: absolute;
                 background-color: #2947A9;
@@ -663,10 +667,15 @@ header {
                 height: 28px;
                 top: 0;
                 left: -16px;
+                transition: 0.5s;
             }
         }
     }
+    .projects-section-grid ul li:nth-child(1).active ~ .active-filter-button {
+        transform: translateY(0px);
+    }
 }
+
 
 
 // SWIPER
@@ -679,6 +688,16 @@ header {
     margin-right: auto;
 }
 
+// .projects-carousel-slide {
+//     width: auto !important;
+// }
+
+.projects-carousel-slide {
+    // justify-content: space-between !important;
+    // max-width: auto !important;
+    width: 0px !important;
+}
+
 .swiper-slide {
     background: grey;
     display: flex;
@@ -686,6 +705,8 @@ header {
     align-items: center;
     height: auto !important;
     max-width: 384px;
+    margin: 10px 10px 10px 10px !important;
+    -webkit-user-select: none;
 
     & .wildstone {
         background-image: url(/img/projects/wildstone-infra-hotel.png);
@@ -777,6 +798,10 @@ header {
         background-size: cover;
     }
 
+    .swiper-ending-slide {
+        display: none !important;
+    }
+
 
 
 
@@ -818,6 +843,7 @@ header {
 .swiper .swiper-button-next {
     top: auto;
     bottom: 0;
+    right: 0;
     -webkit-user-select: none;
     background-color: #292E3D;
     max-width: 295px;
@@ -829,6 +855,8 @@ header {
 .swiper .swiper-button-prev {
     top: auto;
     bottom: 0;
+    left: 0;
+    margin-left: 10px;
     -webkit-user-select: none;
     background-color: #292E3D;
     max-width: 295px;
@@ -846,15 +874,15 @@ header {
 }
 
 
-.hidden-project {
-    opacity: 0;
-    min-height: 0;
-    min-width: 0;
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
 // .hidden-project {
-//     display: none !important;
+//     opacity: 0;
+//     min-height: 0;
+//     min-width: 0;
+//     padding: 0;
+//     margin: 0;
+//     border: 0;
 // }
+
+.projects-carousel-slide .hidden-project {
+    display: none;
+}
